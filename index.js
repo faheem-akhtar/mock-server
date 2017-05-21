@@ -1,12 +1,14 @@
 var nodemon = require('nodemon')
+var path = require('path')
 
 const options = require('./config/options')
 
 function mock() {
   var nodemonConfig = {
-    script: 'app.js',
+    script: path.resolve(__dirname, 'app.js'),
     args: process.argv.slice(2),
     restartable: "rs",
+    ignoreRoot: [".git"],
     ignore: [
       ".git",
       "node_modules/**/node_modules"
