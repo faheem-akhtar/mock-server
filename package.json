@@ -1,0 +1,20 @@
+{
+  "name": "mock-server",
+  "version": "0.1.0",
+  "description": "A Mock Server for API Blueprint",
+  "main": "index.js",
+  "bin": {
+    "mock": "./bin/mock.js"
+  },
+  "scripts": {
+    "start": "node ./bin/mock.js"
+  },
+  "author": "Faheem Akhtar <faheempiscean@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "argv": "0.0.2",
+    "drakov": "^1.0.4",
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0"
+  }
+}
