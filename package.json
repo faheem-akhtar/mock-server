@@ -1,5 +1,5 @@
 {
-  "name": "mock-server",
+  "name": "api-blueprint",
   "version": "0.1.0",
   "description": "A Mock Server for API Blueprint",
   "main": "index.js",
