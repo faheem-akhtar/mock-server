@@ -1,6 +1,6 @@
 {
   "name": "api-blueprint",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "A Mock Server for API Blueprint",
   "main": "index.js",
   "bin": {
@@ -16,5 +16,13 @@
     "drakov": "^1.0.4",
     "express": "^4.15.3",
     "nodemon": "^1.11.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/faheem-akhtar/mock-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/faheem-akhtar/mock-server/issues"
+  },
+  "homepage": "https://github.com/faheem-akhtar/mock-server#readme"
 }
