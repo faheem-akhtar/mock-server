@@ -12,5 +12,6 @@ module.exports = {
     delay: options.delay,
     method: ['DELETE','OPTIONS'],
     watch: false,
-    public: true
+    public: true,
+    autoOptions: true
 }
