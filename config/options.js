@@ -1,13 +1,15 @@
 var argv = require('argv')
 var path = require('path')
 
-const defaultOptions = {
-    watch: true,
-    path: path.resolve(__dirname, '../md'),
-    delay: 500,
-    port: 3000
-}
+const defaultOptions = require('../blueprint.conf.js');
+
 const argvOptions = [
+  {
+    name: 'config',
+    short: 'c',
+    type: 'path',
+    description: 'Path to find an object configuration file'
+  },
   {
     name: 'watch',
     short: 'w',
@@ -34,6 +36,19 @@ const argvOptions = [
   }
 ]
 
-const options = Object.assign(defaultOptions, argv.option(argvOptions).run().options)
+const args = argv.option(argvOptions).run().options;
+
+let options = Object.assign({}, defaultOptions);
+
+if (args.config) {
+  try {
+    const config = require(args.config);
+    options = Object.assign(options, config);
+  } catch (e) {
+    console.warn("Could not find local config file. Switching to default");
+  }
+}
+
+options = Object.assign(options, args)
 
 module.exports = options
