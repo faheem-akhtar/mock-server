@@ -44,6 +44,9 @@ Just type 'rs' and Enter while in watching mode in order to restart the server m
     Displays help information about this script
     'mock.js -h' or 'mock.js --help'
 
+    --config, -c
+    Add the path of an optional configuration file which allows you to set all configurable options in a Node.js module
+
     --watch, -w
     Enable/Disable watch mode
 
