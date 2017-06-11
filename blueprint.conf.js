@@ -1,3 +1,5 @@
+const path = require('path');
+
 /**
  * This is the default api-blueprint
  * configuration file. to override these
