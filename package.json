@@ -1,6 +1,6 @@
 {
   "name": "api-blueprint",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A Mock Server for API Blueprint",
   "main": "index.js",
   "bin": {
