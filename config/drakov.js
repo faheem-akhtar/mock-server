@@ -10,7 +10,7 @@ module.exports = {
     // sslKeyFile: '/path/to/ssl/key.key',
     // sslCrtFile: '/path/to/ssl/cert.crt',
     delay: options.delay,
-    method: ['DELETE','OPTIONS'],
+    method: ['DELETE', 'OPTIONS', 'PUT'],
     watch: false,
     public: true,
     autoOptions: true
