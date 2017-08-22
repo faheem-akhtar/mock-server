@@ -11,6 +11,7 @@ module.exports = {
     // sslCrtFile: '/path/to/ssl/cert.crt',
     delay: options.delay,
     method: ['DELETE', 'OPTIONS', 'PUT'],
+    header: ['Authorization', 'X-Csrf-Token'],
     watch: false,
     public: true,
     autoOptions: true
